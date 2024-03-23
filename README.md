@@ -1,0 +1,1 @@
+# WorldCupResult_BlazorWASM
