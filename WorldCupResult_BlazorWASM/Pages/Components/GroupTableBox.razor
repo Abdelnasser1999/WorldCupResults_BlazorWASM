@@ -1,0 +1,46 @@
+﻿<div class="col-sm-6 mb-4">
+    <div class="card shadow border-none">
+        <div class="card-header bg-primary text-center">
+            <b>@standings.group.Replace("_", " ")</b>
+        </div>
+
+        <div class="row m-0 bg-secondary">
+            <div class="col-sm-4 text-center">
+                Team
+            </div>
+
+            <div class="col-sm-2 text-center">
+                W
+            </div>
+
+            <div class="col-sm-2 text-center">
+                L
+            </div>
+
+            <div class="col-sm-2 text-center">
+                D
+            </div>
+
+            <div class="col-sm-2 text-center">
+                Pts
+            </div>
+        </div>
+
+        <!-- TEAMS -->
+        <ul class="list-group list-group-flush">
+
+            @foreach (var teamRow in standings.table)
+            {
+                <!-- TEAM -->
+                <TableRow Row="@teamRow" />
+                <!--// TEAM //-->
+            }
+        </ul>
+        <!--// TEAMS //-->
+    </div>
+</div>
+@code {
+	[Parameter]
+    public Standing standings { get; set; }
+
+}

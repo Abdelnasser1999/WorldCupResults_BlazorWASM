@@ -5,6 +5,6 @@
         public string stage { get; set; }
         public string type { get; set; }
         public string group { get; set; }
-        public List<GroupTable> GroupTable { get; set; }
+        public List<GroupTable> table { get; set; }
     }
 }

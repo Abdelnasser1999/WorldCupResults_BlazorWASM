@@ -1,6 +1,6 @@
 ﻿namespace WorldCupResult_BlazorWASM.Models
 {
-    public class StaticsRespons
+    public class StatsRespons
     {
         public Filters filters { get; set; }
         public Area area { get; set; }
